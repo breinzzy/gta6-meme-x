@@ -4,7 +4,9 @@
 // from the repository root to the output directory, where the gate
 // reads it. The entry itself is the X post: the meme picture and
 // its text are read by the house from X, not from anything written
-// here. Run it the way the grader does:
+// here. POST.json must name the post's address as
+// {"url": "https://x.com/<handle>/status/<id>"}.
+// Run it the way the grader does:
 //   mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 
 import { copyFileSync, mkdirSync } from 'node:fs';
